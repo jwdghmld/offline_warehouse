@@ -40,7 +40,7 @@
 
 ## 总体架构
 
-![电商离线数仓总体架构](docs/images/offline-system-architecture.svg)
+![电商离线数仓总体架构](docs/images/offline-system-architecture.png)
 
 总体链路分为两条相互隔离的路径：
 
@@ -81,7 +81,7 @@ MySQL `ecommerce_business` 共有 2 张冻结维表和 5 张每日事实表。
 
 ## 数仓分层架构
 
-![离线数仓分层与表作用](docs/images/warehouse-layers.svg)
+![离线数仓分层与表作用](docs/images/warehouse-layers.png)
 
 ### ODS：原始数据层
 
@@ -170,7 +170,7 @@ MySQL -> ODS 日增量
 
 ## Airflow 调度
 
-![Airflow 每日调度链路](docs/images/airflow-pipeline.svg)
+![Airflow 每日调度链路](docs/images/airflow-pipeline.png)
 
 | DAG | 调度方式 | 主要任务 |
 |---|---|---|
@@ -276,7 +276,7 @@ offline_warehouse/
 ├── docs/
 │   ├── design.md                        # 详细设计与指标说明
 │   ├── deployment.md                    # 配置和部署说明
-│   └── images/                          # SVG 架构图与运行截图
+│   └── images/                          # PNG 架构图与运行截图
 ├── hive/ddl/                            # ODS、DIM、DWD、DWS、ADS DDL
 ├── source-data-generator/
 │   ├── config/                          # 正式与小型验证配置
