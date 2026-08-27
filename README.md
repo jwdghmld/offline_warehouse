@@ -1,4 +1,4 @@
-# offline_warehouse：电商离线数仓与经营分析
+电商离线数仓与经营分析
 
 基于 **MySQL、Hive、Spark SQL 和 Airflow** 构建的电商离线数仓项目。项目从业务数据生成开始，完成 ODS、DIM、DWD、DWS、ADS 分层建设，最终形成经营总览、SKU 销售排行和店铺评分三类分析结果，并发布到 MySQL 供查询展示。
 
