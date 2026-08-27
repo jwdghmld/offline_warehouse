@@ -301,7 +301,7 @@ offline_warehouse/
 - 实时风险检测代码位于 [realtime_risk](https://github.com/jwdghmld/realtime_risk)。
 - 两个仓库共享 `contracts/kafka/topic-contract.md`，当前合同版本为 `1.0.0`。
 - 当前项目不使用 CDC；Kafka 事件由每日事实脚本在 MySQL 提交成功后主动发布。
-- 配置文件中的“此处自定义”必须由部署者按实际环境填写，仓库不保存个人主机、账号或密码。
+- 配置文件中的“此处自定义”必须由部署者按实际环境填写。
 
 ## 延伸文档
 
