@@ -59,7 +59,7 @@
 
 ## 数据源设计
 
-MySQL `ecommerce_business` 共有 2 张冻结维表和 5 张每日事实表。
+MySQL `ecommerce_business` 共有 2 张维表和 5 张每日事实表。
 
 | 类型 | 表名 | 作用 |
 |---|---|---|
