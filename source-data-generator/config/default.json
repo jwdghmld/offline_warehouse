@@ -1,0 +1,36 @@
+{
+  "base_seed": 20260826,
+  "profile": "formal",
+  "dimensions": {
+    "shops": 500,
+    "skus": 20000,
+    "categories": 200,
+    "users": 100000
+  },
+  "facts": {
+    "behavior_min": 180000,
+    "behavior_max": 420000,
+    "order_min": 9000,
+    "order_max": 21000,
+    "detail_min": 18000,
+    "detail_max": 27000,
+    "fixed_daily_counts": false,
+    "weekend_multiplier": [1.15, 1.30],
+    "risk_ratio": [0.001, 0.005]
+  },
+  "mysql": {
+    "host": "此处自定义",
+    "port": 3306,
+    "user": "此处自定义",
+    "password": "此处自定义",
+    "database": "此处自定义",
+    "connect_timeout_seconds": 10,
+    "read_timeout_seconds": 120,
+    "write_timeout_seconds": 120,
+    "batch_size": 1000
+  },
+  "kafka": {
+    "bootstrap_servers": "此处自定义",
+    "client_id": "此处自定义"
+  }
+}

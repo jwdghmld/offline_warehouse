@@ -1,0 +1,26 @@
+name: offline-warehouse-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile Python files
+        run: python -m compileall -q source-data-generator spark airflow
+      - name: Run generator tests
+        working-directory: source-data-generator
+        run: python -m unittest discover -s tests -v
+
+  shell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate shell syntax
+        run: bash -n spark/mysql-spark.sh spark/spark-env.sh
